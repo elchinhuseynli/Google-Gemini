@@ -1,0 +1,207 @@
+body {
+    background: #020520;
+    color: white;
+    --brand--color-black: #020520;
+    --brand--color-main: #ddfa65;
+    --color-2: #90c469;
+    --color-3: #b1bad3;
+    --color-4: #69a8c9;
+    --color-5: #4698E3;
+    font-family: "bc-novatica-cyr", sans-serif;
+}
+
+
+.cls-1 {
+  stroke: var(--brand--color-main)
+}
+
+.cls-2 {
+ stroke: var(--color-2);
+}
+
+.cls-3 {
+  stroke: var(--color-3);
+}
+
+.cls-4 {
+  stroke: var(--color-4);
+}
+
+.cls-5 {
+  stroke: var(--color-5);
+}
+
+.bg-path {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+
+  .fill-path {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+
+path  {
+    fill: none;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: currentColor;
+
+  }
+
+  .section {
+    position: relative;
+  }
+
+
+.sticky_wrap {
+    position: relative;
+    padding-bottom: 100vh;
+  }
+
+  .sticky_trigger {
+    height: 100vh;
+  }
+
+
+  .sticky_track {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+  }
+
+  .sticky_element {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .padding-global {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+
+  .title-wrapper {
+    display: flex;
+    max-width: 40rem;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    text-align: center;
+  }
+  
+  .title-wrapper.no-margin {
+    margin-bottom: 0rem;
+  }
+
+  .text-color-flex {
+    color: #90c469;
+  }
+
+
+  .cta_button-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .cta_button {
+    position: relative;
+    width: 10rem;
+    padding-top: 0.75rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: var(--brand--color-main);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: var(--brand--color-main);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--brand--color-main);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: var(--brand--color-main);
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    background-color: var(--brand--color-black);
+    box-shadow: -10px -10px 10px 5px hsla(235.71428571428572, 87.50%, 3.14%, 0.40), 10px 10px 10px 5px rgba(1, 2, 15, 0.4);
+    opacity: 0.98;
+    color: var(--brand--color-main);
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .cta_button:hover {
+    background-color: var(--brand--color-main);
+    color: var(--brand--color-black);
+  }
+
+
+  .sticky_gradient {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: -2;
+    margin-top: 113px;
+    margin-right: 113px;
+    margin-bottom: 113px;
+    margin-left: 113px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+    will-change: filter;
+  }
+
+  .sticky_gradient {
+    background: radial-gradient(circle, rgba(144, 172, 255, 0.2) 0%, rgba(144, 172, 255, 0) 70%, rgba(144, 172, 255, 0) 100%);
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
