@@ -15,13 +15,13 @@ window.addEventListener("load", function () {
   gsap.to(paths, {
     strokeDashoffset: (i, target) => -target.getTotalLength(),
     duration: 2, 
-    stagger: 0.05, 
+    stagger: 0.02, 
     ease: "power1.inOut", 
     scrollTrigger: {
       trigger: ".sticky_trigger", 
       start: "top top", 
       end: "bottom top", //
-      scrub: 2.5,
+      scrub: 3,
     },
   });
 });
